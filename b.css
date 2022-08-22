@@ -1,6 +1,14 @@
-font-family: FZYanSJW;
-font-family: FZYanSJW;
-font-size: 32px;
-// 字间距
-letter-spacing: 2px;
-font-weight: bold;
+
+
+--rotate-180deg: 0;
+​
+.rotate-90-cw1 {
+  transform: var(--rotate-180deg);
+  transition: transform 0.5s ease-in-out;
+  font-family: FZYanSJW;
+  font-family: FZYanSJW;
+  font-size: 32px;
+  // 字间距
+  letter-spacing: 2px;
+  font-weight: bold;
+}
