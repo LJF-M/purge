@@ -12,3 +12,59 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
+
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+
+#scene div {
+  width: var(--container-width);
+  height: var(--container-height);
+  border-top: var(--outline-width) solid var(--border-top-color);
+  border-right: var(--outline-width) solid var(--border-right-color);
+  position: relative;
+  border-radius: 100%;
+  transform: translateZ(0) rotate(var(--rotation));
+  animation:
+    portal-width 2.5s infinite,
+    portal-height 10s infinite;
+}
+
+#scene div div {
+  width: var(--element-width);
+  height: var(--element-height);
+  position: absolute;
+  bottom: var(--element-bottom);
+  right: var(--element-right);
+  animation: portal-element 2.5s infinite linear;
+}
+
+@keyframes portal-width {
+  50% {
+    width: 100px;
+  }
+}
+
+@keyframes portal-height {
+  50% {
+    height: 300px;
+  }
+}
+
+@keyframes portal-element {
+  50% {
+    width: 102%;
+  }
+}
