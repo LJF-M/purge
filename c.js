@@ -1,3 +1,9 @@
+string a = new String()
+
+String b - new String()
+
+Date b = new Date()
+
 function  copytext(text){
       var textarea = document.createElement("textarea");
       document.body.appendChild(textarea);
